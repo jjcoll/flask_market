@@ -28,7 +28,8 @@ def register_page():
         user_to_create = User(
             username=form.username.data,
             email=form.email_address.data,
-            password_hash=form.password1.data,
+            # this executes the password setter
+            password=form.password1.data,
         )
         # submit changes to data base
         db.session.add(user_to_create)
