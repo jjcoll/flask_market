@@ -10,12 +10,12 @@ Login
     <div class="container">
         <h1 class="h3 mb-1 mt-5 font-wieght-normal">Login to you Account </h1>
         <br>
-        <form action="POST" class="form-signin" style="color:white">
+        <form method="post" class="form-signin" style="color:white">
             {{ form.hidden_tag() }}
             {{ form.username.label() }}
             {{ form.username(class='form-control', placeholder='User Name') }}
             {{ form.password.label() }}
-            {{ form.username(class='form-control', placeholder='Password') }}
+            {{ form.password(class='form-control', placeholder='Password') }}
 
             <br>
 
